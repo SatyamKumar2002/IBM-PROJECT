@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Appointment System</h1>
+        <form id="appointment-form">
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="doctor">Doctor:</label>
+            <input type="text" id="doctor" name="doctor" required>
+            
+            <label for="payment">Payment Amount:</label>
+            <button type="button" id="payment-button" class="primary-button">Pay 500</button>
+            
+            <button type="submit" id="schedule-button">Schedule Appointment</button>
+        </form>
+    </div>
+    <div class="appointments-container">
+        <h2>Scheduled Appointments</h2>
+        <ul id="appointments-list"></ul>
+    </div>
+
+    <div id="confirmation-dialog" class="dialog">
+        <p>Are you sure that you want to cancel the appointment?</p>
+        <button id="confirm-yes" class="dialog-button">YES</button>
+        <button id="confirm-no" class="dialog-button">NO</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
